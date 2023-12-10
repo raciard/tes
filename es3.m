@@ -1,8 +1,11 @@
-n = -500:500; % per il plot n = -10:10
+n = -10:10; % per il plot n = -10:10
 n_0 = 2;
 A = 5;
 N = 6;
 
+
+
+figure('Name','Es 3')
 % Inizializzazione funzioni
 xa = exp(-n) .* (n >= 0);
 xb = A .* ones(1,length(n));
@@ -44,13 +47,22 @@ title("A per [n-n0] <= N")
 
 % Visualizzazione dei risultati
 disp('Energia e potenza dei segnali:');
+fprintf('\n')
+
 disp(['Energia xa: ', num2str(E_xa)]);
 disp(['Potenza xa: ', num2str(P_xa)]);
+fprintf('\n')
 disp(['Energia xb: ', num2str(E_xb)]);
 disp(['Potenza xb: ', num2str(P_xb)]);
+fprintf('\n')
+
 disp(['Energia xc: ', num2str(E_xc)]);
 disp(['Potenza xc: ', num2str(P_xc)]);
+fprintf('\n')
+
 disp(['Energia xd: ', num2str(E_xd)]);
 disp(['Potenza xd: ', num2str(P_xd)]);
+fprintf('\n')
+
 disp(['Energia xe: ', num2str(E_xe)]);
 disp(['Potenza xe: ', num2str(P_xe)]);

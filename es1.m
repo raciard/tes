@@ -9,6 +9,8 @@ y4= x(n + 10) - x(-n + 10) - (n==0)
 
 yPari = (x(n) + x(-n))/2
 yDispari = (x(n) - x(-n)) /2
+
+figure('name', 'Esercizio 1')
 subplot(4,3,1)
 
 stem(n, x(n))
@@ -27,7 +29,7 @@ stem(n,y3)
 title("x[2 * n]")
 
 subplot(4,3,5)
-h = stem(n,y4)
+stem(n,y4)
 title("x[n + 10] - x[-n + 10] - δ[n]")
 
 subplot(4,3,7)
@@ -39,5 +41,3 @@ subplot(4,3,8)
 stem(n,yDispari)
 title("Parte dispari")
 
-waitfor(h)
-hold off

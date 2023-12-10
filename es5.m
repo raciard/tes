@@ -2,7 +2,7 @@ n=[-10:10];
 
 y=5*cos((5*pi*n)./3);
 
-figure
+figure("Name", "es5")
 set(gca,'Fontsize',14)
 stem(n,y,'k')
 xlabel('n')
